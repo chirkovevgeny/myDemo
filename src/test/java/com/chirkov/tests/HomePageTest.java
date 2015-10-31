@@ -1,12 +1,10 @@
 package com.chirkov.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.chirkov.drivers.DriverFactory;
+import com.chirkov.constants.DataConstants;
 import com.chirkov.pages.HomePage;
 
 public class HomePageTest extends BaseTest{
@@ -15,20 +13,18 @@ public class HomePageTest extends BaseTest{
 	
 	@BeforeClass
 	public void setUp(){
-		homePage = new HomePage(driver);
+		homePage = new HomePage(driverFactory);
 	}
 		
 	@Test
 	public void testLoginBtn() throws Exception {
 		homePage.clickLogIn();
-		System.out.println(driver.getCurrentUrl());
-		Assert.assertTrue(driver.getCurrentUrl().equals(baseDriver.BASEURL+"/login"));
+		Assert.assertTrue(driver.getCurrentUrl().equals(DataConstants.BASEURL+"/login"));
 	}
 	
 	@Test
 	public void testSignUpBtn() throws InterruptedException {
 		homePage.clickSignUp();
-		Assert.assertTrue(driver.getCurrentUrl() == (baseDriver.BASEURL+"/join"));
-		Thread.sleep(5000);
+		Assert.assertTrue(driver.getCurrentUrl().equals(DataConstants.BASEURL+"/join"));
 	}
 }

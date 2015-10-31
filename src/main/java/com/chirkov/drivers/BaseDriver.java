@@ -1,50 +1,31 @@
 package com.chirkov.drivers;
 
-import java.io.File;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.chirkov.tests.HomePageTest;
-
-public class BaseDriver {
+public abstract class BaseDriver {
 	
 	public FluentWait<WebDriver> wait;
+	protected DriverFactory driverFactory;
 	protected WebDriver driver;
-	public final String BASEURL = "https://qa-olive.int.declara.com";
-	public static final int TIMEOUT = 20;
-	private static final String CHROME_MAC_DRIVER = "/drivers/mac/chromedriver";
-	private static final String CHROME_WINDOWS_DRIVER = "/drivers/windows/chromedriver.exe";
 	
-	
-	public BaseDriver() {
+	public BaseDriver(DriverFactory driverFactory) {
+		this.driverFactory = driverFactory;
+		driver = driverFactory.getDriver();
+		wait = driverFactory.getWait();
 	}
 	
 	// The Chrome Driver locations under the resource folder
 		
 //		protected DesiredCapabilities capabilities;
-			
-		public void setUpDriver (String browser) {
-			if (browser == "chrome"){
-				setupChromeDriver();
-			}
-			this.wait = wait(TIMEOUT);
-			setImpliciteWait(TIMEOUT);
-		}
 		
 		public WebDriver getDriver() {
 			return driver;
-		}
-		
-		private void setImpliciteWait(int timeout) {
-			driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
 		}
 
 		protected FluentWait<WebDriver> wait(int timeout) {
@@ -76,22 +57,4 @@ public class BaseDriver {
 			element.sendKeys(text);
 		}
 
-//		setupChromeDriver should be called before each test class
-		private void setupChromeDriver() {
-		   // OS type
-		   if (System.getProperty("os.name").contains("Mac")) {
-		      File cDriver = new File(HomePageTest.class.getResource(CHROME_MAC_DRIVER).getFile());
-		       
-		      // Is it executable
-		      if (!cDriver.canExecute()) {
-		         cDriver.setExecutable(true);
-		      }
-		      System.setProperty("webdriver.chrome.driver", HomePageTest.class.getResource(CHROME_MAC_DRIVER).getFile());
-		       
-		   } else {
-		      System.setProperty("webdriver.chrome.driver", HomePageTest.class.getResource(CHROME_WINDOWS_DRIVER).getFile()); 
-		   }
-		   this.driver = new ChromeDriver();
-		}
-	
 }
