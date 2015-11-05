@@ -1,35 +1,50 @@
 package com.chirkov.tests;
 
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.chirkov.drivers.DriverFactory;
+import com.chirkov.utils.DataSupplier;
 
-public class BaseTest {
+public abstract class BaseTest {
 	
 	protected DriverFactory driverFactory;
 	protected WebDriver driver;
+	protected final static Logger logger = LoggerFactory
+			.getLogger(BaseTest.class);
 	
-	public BaseTest(){	
+	@Parameters("env")
+	@BeforeSuite()
+	public void setupTestSuite(@Optional("qa")String testEnv){
+		DataSupplier.setUpConfig(testEnv);
+		System.out.println("Executing BeforeSuite for BaseTest");
 	}
 	
-	@BeforeSuite
-	public void setupTestSuite(){
-		System.out.println("Before Suite is running");
+	@AfterSuite(alwaysRun=true)
+	public void tearDownSuite() throws Exception {
+		System.out.println("Executing AfterSuite for BaseTest");
+	}
+	
+	@Parameters("browser")
+	@BeforeClass(alwaysRun=true)
+	public void setUpDriver(@Optional("chrome") String browser){
 		driverFactory = new DriverFactory();
-		driverFactory.setUpDriver("chrome");
+		driverFactory.setUpDriver(browser);
 		driver = driverFactory.getDriver();
+		System.out.println("Executing BeforeClass for BaseTest");
 	}
 	
-	@BeforeClass
-	public void verifyLoggedOut(){
-		System.out.println("verifying that user is logged out");
-	}
-	
-	@AfterSuite
+	@AfterClass(alwaysRun=true)
 	public void tearDown() throws Exception {
+		System.out.println("Executing AfterClass for BaseTest");
 		driver.quit();
-	}	
+	}
+	
 }

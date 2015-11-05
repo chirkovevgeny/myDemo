@@ -19,11 +19,8 @@ public abstract class BaseDriver {
 		driver = driverFactory.getDriver();
 		wait = driverFactory.getWait();
 	}
+
 	
-	// The Chrome Driver locations under the resource folder
-		
-//		protected DesiredCapabilities capabilities;
-		
 		public WebDriver getDriver() {
 			return driver;
 		}

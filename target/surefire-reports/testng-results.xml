@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="com.demo.tests.loginTest" duration-ms="9402" started-at="2015-10-23T02:39:02Z" finished-at="2015-10-23T02:39:11Z">
+  <suite name="Smoke Test" duration-ms="23484" started-at="2015-11-05T01:22:12Z" finished-at="2015-11-05T01:22:35Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="9402" started-at="2015-10-23T02:39:02Z" finished-at="2015-10-23T02:39:11Z">
-      <class name="com.demo.tests.loginTest">
-        <test-method status="PASS" signature="setupTestClass()[pri:0, instance:com.demo.tests.loginTest@5cc7c2a6]" name="setupTestClass" is-config="true" duration-ms="2781" started-at="2015-10-22T19:39:02Z" finished-at="2015-10-22T19:39:04Z">
+    <test name="Test Home Page" duration-ms="13671" started-at="2015-11-05T01:22:12Z" finished-at="2015-11-05T01:22:25Z">
+      <class name="com.chirkov.tests.HomePageTest">
+        <test-method status="PASS" signature="setUpDriver(java.lang.String)[pri:0, instance:com.chirkov.tests.HomePageTest@3b084709]" name="setUpDriver" is-config="true" duration-ms="2063" started-at="2015-11-04T17:22:12Z" finished-at="2015-11-04T17:22:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupTestClass -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.demo.tests.loginTest@5cc7c2a6]" name="testLogin" duration-ms="6023" started-at="2015-10-22T19:39:04Z" finished-at="2015-10-22T19:39:10Z">
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.chirkov.tests.HomePageTest@3b084709]" name="setUp" is-config="true" duration-ms="30" started-at="2015-11-04T17:22:14Z" finished-at="2015-11-04T17:22:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.loginTest@5cc7c2a6]" name="tearDown" is-config="true" duration-ms="587" started-at="2015-10-22T19:39:10Z" finished-at="2015-10-22T19:39:11Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginBtn()[pri:0, instance:com.chirkov.tests.HomePageTest@3b084709]" name="testLoginBtn" duration-ms="8410" started-at="2015-11-04T17:22:14Z" finished-at="2015-11-04T17:22:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginBtn -->
+        <test-method status="PASS" signature="testSignUpBtn()[pri:0, instance:com.chirkov.tests.HomePageTest@3b084709]" name="testSignUpBtn" duration-ms="2559" started-at="2015-11-04T17:22:22Z" finished-at="2015-11-04T17:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpBtn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.chirkov.tests.HomePageTest@3b084709]" name="tearDown" is-config="true" duration-ms="598" started-at="2015-11-04T17:22:25Z" finished-at="2015-11-04T17:22:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demo.tests.loginTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- com.demo.tests.loginTest -->
+      </class> <!-- com.chirkov.tests.HomePageTest -->
+    </test> <!-- Test Home Page -->
+    <test name="LogIn Test" duration-ms="9797" started-at="2015-11-05T01:22:25Z" finished-at="2015-11-05T01:22:35Z">
+      <class name="com.chirkov.tests.LoginTest">
+        <test-method status="PASS" signature="setupTestSuite(java.lang.String)[pri:0, instance:com.chirkov.tests.LoginTest@131276c2]" name="setupTestSuite" is-config="true" duration-ms="13" started-at="2015-11-04T17:22:12Z" finished-at="2015-11-04T17:22:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTestSuite -->
+        <test-method status="PASS" signature="setUpDriver(java.lang.String)[pri:0, instance:com.chirkov.tests.LoginTest@131276c2]" name="setUpDriver" is-config="true" duration-ms="1297" started-at="2015-11-04T17:22:25Z" finished-at="2015-11-04T17:22:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.chirkov.tests.LoginTest@131276c2]" name="setUp" is-config="true" duration-ms="2" started-at="2015-11-04T17:22:27Z" finished-at="2015-11-04T17:22:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLoginBtn()[pri:0, instance:com.chirkov.tests.LoginTest@131276c2]" name="testLoginBtn" duration-ms="7905" started-at="2015-11-04T17:22:27Z" finished-at="2015-11-04T17:22:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginBtn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.chirkov.tests.LoginTest@131276c2]" name="tearDown" is-config="true" duration-ms="592" started-at="2015-11-04T17:22:34Z" finished-at="2015-11-04T17:22:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.chirkov.tests.LoginTest@131276c2]" name="tearDownSuite" is-config="true" duration-ms="1" started-at="2015-11-04T17:22:35Z" finished-at="2015-11-04T17:22:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.chirkov.tests.LoginTest -->
+    </test> <!-- LogIn Test -->
+  </suite> <!-- Smoke Test -->
 </testng-results>

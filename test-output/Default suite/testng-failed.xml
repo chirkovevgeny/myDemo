@@ -5,10 +5,8 @@
     <classes>
       <class name="com.chirkov.tests.HomePageTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="testLoginBtn"/>
           <include name="setupTestSuite"/>
-          <include name="setUp"/>
-          <include name="verifyLoggedOut"/>
           <include name="testSignUpBtn"/>
         </methods>
       </class> <!-- com.chirkov.tests.HomePageTest -->

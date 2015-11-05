@@ -1,1 +1,6 @@
-/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/demo/pages/HomePage.java
+/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/pages/HomePage.java
+/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/drivers/DriverFactory.java
+/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/pages/LoginPage.java
+/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/pages/BasePage.java
+/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/drivers/BaseDriver.java
+/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/utils/DataSupplier.java

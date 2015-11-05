@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Test]">
+  <test name="Test Home Page(failed)">
     <classes>
-      <class name="com.chirkov.tests.HomePageTest">
+      <class name="com.chirkov.tests.LoginTest">
         <methods>
           <include name="tearDown"/>
           <include name="setupTestSuite"/>
-          <include name="setUp"/>
-          <include name="verifyLoggedOut"/>
+          <include name="setUpDriver"/>
+          <include name="tearDownSuite"/>
+        </methods>
+      </class> <!-- com.chirkov.tests.LoginTest -->
+      <class name="com.chirkov.tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testLoginBtn"/>
+          <include name="setUpDriver"/>
           <include name="testSignUpBtn"/>
         </methods>
       </class> <!-- com.chirkov.tests.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test Home Page(failed) -->
+  <test name="LogIn Test(failed)">
+    <classes>
+      <class name="com.chirkov.tests.LoginTest">
+        <methods>
+          <include name="testLoginBtn"/>
+          <include name="tearDown"/>
+          <include name="setupTestSuite"/>
+          <include name="setUpDriver"/>
+          <include name="tearDownSuite"/>
+        </methods>
+      </class> <!-- com.chirkov.tests.LoginTest -->
+      <class name="com.chirkov.tests.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.chirkov.tests.HomePageTest -->
+    </classes>
+  </test> <!-- LogIn Test(failed) -->
+</suite> <!-- Failed suite [Smoke Test] -->

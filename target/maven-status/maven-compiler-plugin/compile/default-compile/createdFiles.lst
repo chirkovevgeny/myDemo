@@ -1,1 +1,6 @@
-com/demo/pages/HomePage.class
+com/chirkov/drivers/BaseDriver.class
+com/chirkov/pages/HomePage.class
+com/chirkov/utils/DataSupplier.class
+com/chirkov/pages/BasePage.class
+com/chirkov/pages/LoginPage.class
+com/chirkov/drivers/DriverFactory.class

@@ -11,4 +11,8 @@ public abstract class BasePage extends BaseDriver{
 		super(driverFactory);
 		PageFactory.initElements(driver, this);
 	}
+	
+	public static String setUpURL(){
+		return "browser";
+	}
 }
