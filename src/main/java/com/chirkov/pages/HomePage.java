@@ -12,10 +12,10 @@ import com.google.common.base.Predicate;
 public class HomePage extends BasePage{
 	
 	@FindBy(css="a.button.login")
-	public WebElement loginButton;
+	public WebElement getLoginButton;
 	
 	@FindBy(css=".heroContent>.button.action")
-	public WebElement signUpButton;
+	public WebElement getSignUpButton;
 	
 	public HomePage(DriverFactory driverFactory) {
 		super(driverFactory);
@@ -23,21 +23,21 @@ public class HomePage extends BasePage{
 	
 	public void goTo(){
 		driver.get(DataSupplier.getURL());
-		wait.until(ExpectedConditions.elementToBeClickable(loginButton));
+		wait.until(ExpectedConditions.elementToBeClickable(getLoginButton));
 	}
 	
 	public void clickLogIn(){
-		waitAndClick(loginButton);
-		wait.until(urlLogin);
+		waitAndClick(getLoginButton);
+		wait.until(loginUrlBuilt);
 	}
 	
 	public void clickSignUp(){
-		waitAndClick(signUpButton);
-		wait.until(urlJoin);
+		waitAndClick(getSignUpButton);
+		wait.until(joinUrlBuilt);
 	}
 	
-	private final Predicate<WebDriver> urlLogin = dr -> dr.getCurrentUrl().equals(DataSupplier.getURL()+"/login");
-	private final Predicate<WebDriver> urlJoin = dr -> dr.getCurrentUrl().equals(DataSupplier.getURL()+"/join");
+	private final Predicate<WebDriver> loginUrlBuilt = dr -> dr.getCurrentUrl().equals(DataSupplier.getURL()+"/login");
+	private final Predicate<WebDriver> joinUrlBuilt = dr -> dr.getCurrentUrl().equals(DataSupplier.getURL()+"/join");
 		
 	
 }

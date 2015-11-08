@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.chirkov.tests.HomePageTest">
+      <class name="com.chirkov.tests.SignUpTest">
         <methods>
-          <include name="testLoginBtn"/>
+          <include name="invalidSignUpWithEmail" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="navigateToEmailSignUpPage"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="setupTestSuite"/>
-          <include name="testSignUpBtn"/>
+          <include name="setUpDriver"/>
+          <include name="tearDownSuite"/>
         </methods>
-      </class> <!-- com.chirkov.tests.HomePageTest -->
+      </class> <!-- com.chirkov.tests.SignUpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

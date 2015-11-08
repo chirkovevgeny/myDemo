@@ -12,4 +12,9 @@
 			<class name="com.chirkov.tests.LoginTest"></class>
 		</classes>
 	</test>
+	<test name="SignUp Test" group-by-instances="true" preserve-order="true">
+		<classes>
+			<class name="com.chirkov.tests.SignUpTest"></class>
+		</classes>
+	</test>
 </suite>

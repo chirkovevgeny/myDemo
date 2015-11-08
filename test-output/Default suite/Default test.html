@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 02 19:49:27 PST 2015</td>
+<td>Started on:</td><td>Sat Nov 07 18:28:19 PST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7761 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31415 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.chirkov.tests.HomePageTest.testLoginBtn()'><b>testLoginBtn</b><br>Test class: com.chirkov.tests.HomePageTest</td>
+<td title='com.chirkov.tests.SignUpTest.navigateToEmailSignUpPage()'><b>navigateToEmailSignUpPage</b><br>Test class: com.chirkov.tests.SignUpTest</td>
 <td></td>
-<td>5</td>
-<td>com.chirkov.tests.HomePageTest@64bfbc86</td></tr>
+<td>8</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
 <tr>
-<td title='com.chirkov.tests.HomePageTest.testSignUpBtn()'><b>testSignUpBtn</b><br>Test class: com.chirkov.tests.HomePageTest</td>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: , , , , Please enter your first name., Please enter your last name., You'll need to enter an email address., You'll need a password.</td>
+<td></td>
+<td>1</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
+<tr>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: a, a, , , , , You'll need to enter an email address., You'll need a password.</td>
 <td></td>
 <td>2</td>
-<td>com.chirkov.tests.HomePageTest@64bfbc86</td></tr>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
+<tr>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: John, Doe, 123, , , , Invalid email address, You'll need a password.</td>
+<td></td>
+<td>2</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
+<tr>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: John, Doe, abc@, 1234567, , , Invalid email address, Oops! Your password must be at least 8 characters.</td>
+<td></td>
+<td>2</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
+<tr>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: John, Doe, abc@asf, 12345678, , , Invalid email address, </td>
+<td></td>
+<td>2</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
+<tr>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: John, Doe, abc@asf@, , , , Invalid email address, You'll need a password.</td>
+<td></td>
+<td>2</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
+<tr>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: John, Doe, abc@asf..com, 12345678, , , Invalid email address, </td>
+<td></td>
+<td>2</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
+<tr>
+<td title='com.chirkov.tests.SignUpTest.testInvalidSignUp()'><b>testInvalidSignUp</b><br>Test class: com.chirkov.tests.SignUpTest<br>Parameters: John, Doe, jack.chirkov+11@declara.com, 12345678, , , Uh oh! This email belongs to an existing Declara account. Please log in or reset your password., </td>
+<td></td>
+<td>2</td>
+<td>com.chirkov.tests.SignUpTest@544fe44c</td></tr>
 </table><p>
 </body>
 </html>

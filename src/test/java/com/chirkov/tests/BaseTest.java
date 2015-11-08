@@ -1,6 +1,7 @@
 package com.chirkov.tests;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterClass;
@@ -19,6 +20,7 @@ public abstract class BaseTest {
 	protected WebDriver driver;
 	protected final static Logger logger = LoggerFactory
 			.getLogger(BaseTest.class);
+	protected FluentWait<WebDriver> wait;
 	
 	@Parameters("env")
 	@BeforeSuite()
@@ -38,6 +40,7 @@ public abstract class BaseTest {
 		driverFactory = new DriverFactory();
 		driverFactory.setUpDriver(browser);
 		driver = driverFactory.getDriver();
+		wait = driverFactory.getWait();
 		System.out.println("Executing BeforeClass for BaseTest");
 	}
 	

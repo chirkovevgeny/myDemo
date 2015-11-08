@@ -29,5 +29,6 @@ public class HomePageTest extends BaseTest{
 		homePage.goTo();
 		homePage.clickSignUp();
 		Assert.assertTrue(driver.getCurrentUrl().equals(DataSupplier.getURL()+"/join"));
+		
 	}
 }

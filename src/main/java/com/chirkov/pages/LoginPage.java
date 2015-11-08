@@ -8,21 +8,28 @@ import com.chirkov.utils.DataSupplier;
 
 public class LoginPage extends BasePage {
 
-	@FindBy(name="email_address")
-	public WebElement emailInputField;
-	
-	@FindBy(name="password")
-	public WebElement passwordInputField;
-	
-	@FindBy(id="login")
-	public WebElement loginBtn;
-	
-	private String email = null;
-	private String password = null;
-	
 	public LoginPage(DriverFactory driverFactory) {
 		super(driverFactory);
 	}
+	
+	@FindBy(name="email_address")
+	public WebElement getEmailInputField;
+	
+	@FindBy(name="password")
+	public WebElement getPasswordInputField;
+	
+	@FindBy(id="login")
+	public WebElement getLoginBtn;
+	
+	@FindBy(css="div.declaraModal-wrapper")
+	public WebElement getErrorModal;
+	
+	@FindBy(css="div.declaraModal-wrapper button")
+	public WebElement getCloseModalBtn;
+	
+	public final String PAGE_TITLE = "Login to Declara";
+	private String email = null;
+	private String password = null;
 	
 	public void goTo(){
 		driver.get(DataSupplier.getURL()+"/login");
@@ -43,8 +50,12 @@ public class LoginPage extends BasePage {
 	}
 	
 	public void submit() {
-		type(emailInputField, email);
-		type(passwordInputField, password);
-		loginBtn.click();
+		type(getEmailInputField, email);
+		type(getPasswordInputField, password);
+		getLoginBtn.click();
+	}
+	
+	public void closeErrorModal() {
+		waitAndClick(getCloseModalBtn);
 	}
 }

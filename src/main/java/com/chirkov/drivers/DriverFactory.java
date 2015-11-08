@@ -15,7 +15,6 @@ import com.chirkov.utils.DataSupplier;
 
 public class DriverFactory {
 	
-	// The Chrome Driver locations under the resource folder
 	private static String CHROME_MAC_DRIVER = DataSupplier.props.getProperty("CHROME_MAC_DRIVER");
 	private static String CHROME_WINDOWS_DRIVER = DataSupplier.props.getProperty("CHROME_WINDOWS_DRIVER");
 	public static final int TIMEOUT = Integer.parseInt(DataSupplier.props.getProperty("TIMEOUT"));
@@ -61,13 +60,10 @@ public class DriverFactory {
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.MILLISECONDS);
 	}
 	
-//	setupChromeDriver should be called before each test class
 	private void setupChromeDriver() {
-	   // OS type
 	   if (System.getProperty("os.name").contains("Mac")) {
 	      File cDriver = new File(DriverFactory.class.getResource(CHROME_MAC_DRIVER).getFile());
 	       
-	      // Is it executable
 	      if (!cDriver.canExecute()) {
 	         cDriver.setExecutable(true);
 	      }

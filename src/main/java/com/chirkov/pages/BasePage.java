@@ -5,6 +5,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.chirkov.drivers.BaseDriver;
 import com.chirkov.drivers.DriverFactory;
 
+
+
 public abstract class BasePage extends BaseDriver{
 	
 	protected BasePage(DriverFactory driverFactory) {
@@ -12,7 +14,4 @@ public abstract class BasePage extends BaseDriver{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public static String setUpURL(){
-		return "browser";
-	}
 }

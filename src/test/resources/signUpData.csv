@@ -1,0 +1,8 @@
+,,,,Please enter your first name.,Please enter your last name.,You'll need to enter an email address.,You'll need a password.
+a,a,,,,,You'll need to enter an email address.,You'll need a password.
+John,Doe,123,,,,Invalid email address,You'll need a password.
+John,Doe,abc@,1234567,,,Invalid email address,Oops! Your password must be at least 8 characters.
+John,Doe,abc@asf,12345678,,,Invalid email address,
+John,Doe,abc@asf@,,,,Invalid email address,You'll need a password.
+John,Doe,abc@asf..com,12345678,,,Invalid email address,
+John,Doe,Last line must always contain error message for already registered user,12345678,,,Uh oh! This email belongs to an existing Declara account. Please log in or reset your password.,

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Smoke_Test">
-              <span class="suite-name border-passed">Smoke Test</span>
+              <span class="suite-name border-failed">Smoke Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Smoke_Test">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">13 methods, 9 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Smoke_Test" class="hide-methods failed suite-Smoke_Test"> (hide)</a> <!-- hide-methods failed suite-Smoke_Test -->
+                      <a href="#" panel-name="suite-Smoke_Test" class="show-methods failed suite-Smoke_Test"> (show)</a> <!-- show-methods failed suite-Smoke_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Smoke_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(, , , , Please enter your first name., Please enter your last name., You&#039;ll need to enter an email a...)">invalidSignUpWithEmail(, , , , Please enter your first name., Please enter your last name., You'll need to enter an email a...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(John, Doe, 123, , , , Invalid email address, You&#039;ll need a password.)">invalidSignUpWithEmail(John, Doe, 123, , , , Invalid email address, You'll need a password.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(John, Doe, abc@asf..com, 12345678, , , Invalid email address, )">invalidSignUpWithEmail(John, Doe, abc@asf..com, 12345678, , , Invalid email address, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(John, Doe, abc@asf@, , , , Invalid email address, You&#039;ll need a password.)">invalidSignUpWithEmail(John, Doe, abc@asf@, , , , Invalid email address, You'll need a password.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(a, a, , , , , You&#039;ll need to enter an email address., You&#039;ll need a password.)">invalidSignUpWithEmail(a, a, , , , , You'll need to enter an email address., You'll need a password.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(John, Doe, abc@, 1234567, , , Invalid email address, Oops! Your password must be at least 8 characte...)">invalidSignUpWithEmail(John, Doe, abc@, 1234567, , , Invalid email address, Oops! Your password must be at least 8 characte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(John, Doe, abc@asf, 12345678, , , Invalid email address, )">invalidSignUpWithEmail(John, Doe, abc@asf, 12345678, , , Invalid email address, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="invalidSignUpWithEmail(John, Doe, jack.chirkov+11@declara.com, 12345678, , , Uh oh! This email belongs to an existing Decla...)">invalidSignUpWithEmail(John, Doe, jack.chirkov+11@declara.com, 12345678, , , Uh oh! This email belongs to an existing Decla...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.SignUpTest" hash-for-method="navigateToEmailSignUpPage">navigateToEmailSignUpPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Smoke_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,17 +155,22 @@
                     <div class="method-list-content passed suite-Smoke_Test">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.LoginTest" hash-for-method="invalidEmailLogin">invalidEmailLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.HomePageTest" hash-for-method="testLoginBtn">testLoginBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.LoginTest" hash-for-method="testLoginBtn">testLoginBtn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.HomePageTest" hash-for-method="testSignUpBtn">testSignUpBtn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.HomePageTest" hash-for-method="testSignUpBtn">testSignUpBtn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Smoke_Test" title="com.chirkov.tests.LoginTest" hash-for-method="validEmailLogin">validEmailLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Smoke_Test -->
@@ -126,6 +185,329 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Smoke_Test" class="panel Smoke_Test">
+          <div class="suite-Smoke_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.chirkov.tests.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(, , , , Please enter your first name., Please enter your last name., You&#039;ll need to enter an email a...)">
+                  </a> <!-- invalidSignUpWithEmail(, , , , Please enter your first name., Please enter your last name., You'll need to enter an email a...) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(, , , , Please enter your first name., Please enter your last name., You'll need to enter an email address., You'll need a password.)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 20 seconds waiting for visibility of Proxy element for: org.openqa.selenium.support.pagefactory.DefaultElementLocator@25df00a0
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;nameFirst&quot;}
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 544 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 36 more
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(John, Doe, 123, , , , Invalid email address, You&#039;ll need a password.)">
+                  </a> <!-- invalidSignUpWithEmail(John, Doe, 123, , , , Invalid email address, You'll need a password.) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(John, Doe, 123, , , , Invalid email address, You'll need a password.)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(John, Doe, abc@asf..com, 12345678, , , Invalid email address, )">
+                  </a> <!-- invalidSignUpWithEmail(John, Doe, abc@asf..com, 12345678, , , Invalid email address, ) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(John, Doe, abc@asf..com, 12345678, , , Invalid email address, )</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(John, Doe, abc@asf@, , , , Invalid email address, You&#039;ll need a password.)">
+                  </a> <!-- invalidSignUpWithEmail(John, Doe, abc@asf@, , , , Invalid email address, You'll need a password.) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(John, Doe, abc@asf@, , , , Invalid email address, You'll need a password.)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(a, a, , , , , You&#039;ll need to enter an email address., You&#039;ll need a password.)">
+                  </a> <!-- invalidSignUpWithEmail(a, a, , , , , You'll need to enter an email address., You'll need a password.) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(a, a, , , , , You'll need to enter an email address., You'll need a password.)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(John, Doe, abc@, 1234567, , , Invalid email address, Oops! Your password must be at least 8 characte...)">
+                  </a> <!-- invalidSignUpWithEmail(John, Doe, abc@, 1234567, , , Invalid email address, Oops! Your password must be at least 8 characte...) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(John, Doe, abc@, 1234567, , , Invalid email address, Oops! Your password must be at least 8 characters.)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(John, Doe, abc@asf, 12345678, , , Invalid email address, )">
+                  </a> <!-- invalidSignUpWithEmail(John, Doe, abc@asf, 12345678, , , Invalid email address, ) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(John, Doe, abc@asf, 12345678, , , Invalid email address, )</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidSignUpWithEmail(John, Doe, jack.chirkov+11@declara.com, 12345678, , , Uh oh! This email belongs to an existing Decla...)">
+                  </a> <!-- invalidSignUpWithEmail(John, Doe, jack.chirkov+11@declara.com, 12345678, , , Uh oh! This email belongs to an existing Decla...) -->
+                  <span class="method-name">invalidSignUpWithEmail</span>
+                  <span class="parameters">(John, Doe, jack.chirkov+11@declara.com, 12345678, , , Uh oh! This email belongs to an existing Declara account. Please log in or reset your password., )</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.toString(Unknown Source)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)
+	at com.chirkov.drivers.BaseDriver.type(BaseDriver.java:54)
+	at com.chirkov.pages.SignUpPage.SignUpWithEmail(SignUpPage.java:59)
+	at com.chirkov.tests.SignUpTest.invalidSignUpWithEmail(SignUpTest.java:43)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToEmailSignUpPage">
+                  </a> <!-- navigateToEmailSignUpPage -->
+                  <span class="method-name">navigateToEmailSignUpPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=46.0.2490.80)
+  (Driver info: chromedriver=2.20.353124 (035346203162d32c80f1dce587c8154a1efa0c3b),platform=Mac OS X 10.11.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;Evgenys-MacBook-Pro.local&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=/var/folders/nm/s5c1tsns3fvdyvz0blbx1x3r0000gn/T/.org.chromium.Chromium.cP94df}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=46.0.2490.80, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 42e37727643c2f60c5134dd5896514d3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+	at com.chirkov.pages.SignUpPage.goTo(SignUpPage.java:54)
+	at com.chirkov.tests.SignUpTest.navigateToEmailSignUpPage(SignUpTest.java:33)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Test-class-failed -->
           <div class="suite-Smoke_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -134,9 +516,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLoginBtn">
-                  </a> <!-- testLoginBtn -->
-                  <span class="method-name">testLoginBtn</span>
+                  <a name="invalidEmailLogin">
+                  </a> <!-- invalidEmailLogin -->
+                  <span class="method-name">invalidEmailLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validEmailLogin">
+                  </a> <!-- validEmailLogin -->
+                  <span class="method-name">validEmailLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,6 +572,11 @@
       &lt;class name=&quot;com.chirkov.tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LogIn Test --&gt;
+  &lt;test name=&quot;SignUp Test&quot; group-by-instances=&quot;true&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.chirkov.tests.SignUpTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUp Test --&gt;
 &lt;/suite&gt; &lt;!-- Smoke Test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,6 +592,9 @@
               </li>
               <li>
                 <span class="test-name">LogIn Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignUp Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,24 +620,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLoginBtn')
-data.setCell(0, 2, 'com.chirkov.tests.HomePageTest')
-data.setCell(0, 3, 8410);
+data.setCell(0, 1, 'invalidSignUpWithEmail')
+data.setCell(0, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(0, 3, 21038);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginBtn')
-data.setCell(1, 2, 'com.chirkov.tests.LoginTest')
-data.setCell(1, 3, 7905);
+data.setCell(1, 1, 'invalidSignUpWithEmail')
+data.setCell(1, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(1, 3, 20324);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSignUpBtn')
-data.setCell(2, 2, 'com.chirkov.tests.HomePageTest')
-data.setCell(2, 3, 2559);
+data.setCell(2, 1, 'invalidSignUpWithEmail')
+data.setCell(2, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(2, 3, 20317);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidSignUpWithEmail')
+data.setCell(3, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(3, 3, 20316);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalidSignUpWithEmail')
+data.setCell(4, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(4, 3, 20276);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidSignUpWithEmail')
+data.setCell(5, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(5, 3, 20274);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidSignUpWithEmail')
+data.setCell(6, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(6, 3, 20249);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLoginBtn')
+data.setCell(7, 2, 'com.chirkov.tests.HomePageTest')
+data.setCell(7, 3, 9108);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidEmailLogin')
+data.setCell(8, 2, 'com.chirkov.tests.LoginTest')
+data.setCell(8, 3, 7820);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validEmailLogin')
+data.setCell(9, 2, 'com.chirkov.tests.LoginTest')
+data.setCell(9, 3, 3958);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidSignUpWithEmail')
+data.setCell(10, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(10, 3, 3444);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSignUpBtn')
+data.setCell(11, 2, 'com.chirkov.tests.HomePageTest')
+data.setCell(11, 3, 3074);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'navigateToEmailSignUpPage')
+data.setCell(12, 2, 'com.chirkov.tests.SignUpTest')
+data.setCell(12, 3, 4);
 window.suiteTableData['Smoke_Test']= { tableData: data, tableDiv: 'times-div-Smoke_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Smoke_Test">
               </div> <!-- times-div-Smoke_Test -->
             </div> <!-- times-div -->
@@ -266,7 +703,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.chirkov.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.chirkov.tests.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupTestSuite(qa)</span>
                 <span class="method-start">0 ms</span>
@@ -280,42 +717,115 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">2081 ms</span>
+                <span class="method-start">2177 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testLoginBtn</span>
-                <span class="method-start">2115 ms</span>
+                <span class="method-start">2258 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSignUpBtn</span>
-                <span class="method-start">10526 ms</span>
+                <span class="method-start">11366 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13085 ms</span>
+                <span class="method-start">14440 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.chirkov.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpDriver(chrome)</span>
-                <span class="method-start">13700 ms</span>
+                <span class="method-start">15080 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14997 ms</span>
+                <span class="method-start">16454 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testLoginBtn</span>
-                <span class="method-start">14999 ms</span>
+                <span class="method-name">invalidEmailLogin</span>
+                <span class="method-start">16457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validEmailLogin</span>
+                <span class="method-start">24278 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22905 ms</span>
+                <span class="method-start">28236 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.chirkov.tests.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpDriver(chrome)</span>
+                <span class="method-start">28854 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">30158 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(, , , , Please enter your first name., Please enter your last name., You'll need to enter an email a...)</span>
+                <span class="method-start">30173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(a, a, , , , , You'll need to enter an email address., You'll need a password.)</span>
+                <span class="method-start">51217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(John, Doe, 123, , , , Invalid email address, You'll need a password.)</span>
+                <span class="method-start">54662 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(John, Doe, abc@, 1234567, , , Invalid email address, Oops! Your password must be at least 8 characte...)</span>
+                <span class="method-start">74982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(John, Doe, abc@asf, 12345678, , , Invalid email address, )</span>
+                <span class="method-start">95300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(John, Doe, abc@asf@, , , , Invalid email address, You'll need a password.)</span>
+                <span class="method-start">115577 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(John, Doe, abc@asf..com, 12345678, , , Invalid email address, )</span>
+                <span class="method-start">135856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidSignUpWithEmail(John, Doe, jack.chirkov+11@declara.com, 12345678, , , Uh oh! This email belongs to an existing Decla...)</span>
+                <span class="method-start">156107 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">navigateToEmailSignUpPage</span>
+                <span class="method-start">176434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">176439 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownSuite</span>
-                <span class="method-start">23501 ms</span>
+                <span class="method-start">177010 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
