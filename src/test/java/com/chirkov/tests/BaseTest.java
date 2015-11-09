@@ -13,6 +13,7 @@ import org.testng.annotations.Parameters;
 
 import com.chirkov.drivers.DriverFactory;
 import com.chirkov.utils.DataSupplier;
+import com.github.javafaker.Faker;
 
 public abstract class BaseTest {
 	
@@ -21,17 +22,17 @@ public abstract class BaseTest {
 	protected final static Logger logger = LoggerFactory
 			.getLogger(BaseTest.class);
 	protected FluentWait<WebDriver> wait;
+	protected Faker faker;
 	
 	@Parameters("env")
 	@BeforeSuite()
 	public void setupTestSuite(@Optional("qa")String testEnv){
 		DataSupplier.setUpConfig(testEnv);
-		System.out.println("Executing BeforeSuite for BaseTest");
+		faker = new Faker();
 	}
 	
 	@AfterSuite(alwaysRun=true)
 	public void tearDownSuite() throws Exception {
-		System.out.println("Executing AfterSuite for BaseTest");
 	}
 	
 	@Parameters("browser")
@@ -41,12 +42,10 @@ public abstract class BaseTest {
 		driverFactory.setUpDriver(browser);
 		driver = driverFactory.getDriver();
 		wait = driverFactory.getWait();
-		System.out.println("Executing BeforeClass for BaseTest");
 	}
 	
 	@AfterClass(alwaysRun=true)
 	public void tearDown() throws Exception {
-		System.out.println("Executing AfterClass for BaseTest");
 		driver.quit();
 	}
 	

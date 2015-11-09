@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31415" started-at="2015-11-08T02:28:19Z" finished-at="2015-11-08T02:28:50Z">
+  <suite name="Default suite" duration-ms="12675" started-at="2015-11-09T06:39:14Z" finished-at="2015-11-09T06:39:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31415" started-at="2015-11-08T02:28:19Z" finished-at="2015-11-08T02:28:50Z">
+    <test name="Default test" duration-ms="12675" started-at="2015-11-09T06:39:14Z" finished-at="2015-11-09T06:39:27Z">
       <class name="com.chirkov.tests.SignUpTest">
-        <test-method status="PASS" signature="setupTestSuite(java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="setupTestSuite" is-config="true" duration-ms="16" started-at="2015-11-07T18:28:19Z" finished-at="2015-11-07T18:28:19Z">
+        <test-method status="PASS" signature="setupTestSuite(java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@128c502c]" name="setupTestSuite" is-config="true" duration-ms="149" started-at="2015-11-08T22:39:14Z" finished-at="2015-11-08T22:39:14Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTestSuite -->
-        <test-method status="PASS" signature="setUpDriver(java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="setUpDriver" is-config="true" duration-ms="2151" started-at="2015-11-07T18:28:19Z" finished-at="2015-11-07T18:28:21Z">
+        <test-method status="PASS" signature="setUpDriver(java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@128c502c]" name="setUpDriver" is-config="true" duration-ms="2530" started-at="2015-11-08T22:39:14Z" finished-at="2015-11-08T22:39:17Z">
           <params>
             <param index="0">
               <value>
@@ -29,387 +29,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="setUp" is-config="true" duration-ms="26" started-at="2015-11-07T18:28:21Z" finished-at="2015-11-07T18:28:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.chirkov.tests.SignUpTest@128c502c]" name="setUp" is-config="true" duration-ms="47" started-at="2015-11-08T22:39:17Z" finished-at="2015-11-08T22:39:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="navigateToEmailSignUpPage()[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="navigateToEmailSignUpPage" duration-ms="8157" started-at="2015-11-07T18:28:21Z" finished-at="2015-11-07T18:28:29Z">
+        <test-method status="PASS" signature="successfullSignUp()[pri:3, instance:com.chirkov.tests.SignUpTest@128c502c]" name="successfullSignUp" duration-ms="9421" started-at="2015-11-08T22:39:17Z" finished-at="2015-11-08T22:39:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToEmailSignUpPage -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="1996" started-at="2015-11-07T18:28:29Z" data-provider="signUpData" finished-at="2015-11-07T18:28:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Please enter your first name.]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Please enter your last name.]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[You'll need to enter an email address.]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[You'll need a password.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="2751" started-at="2015-11-07T18:28:31Z" data-provider="signUpData" finished-at="2015-11-07T18:28:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[You'll need to enter an email address.]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[You'll need a password.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="2653" started-at="2015-11-07T18:28:34Z" data-provider="signUpData" finished-at="2015-11-07T18:28:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Invalid email address]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[You'll need a password.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="2196" started-at="2015-11-07T18:28:37Z" data-provider="signUpData" finished-at="2015-11-07T18:28:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc@]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1234567]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Invalid email address]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Oops! Your password must be at least 8 characters.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="2700" started-at="2015-11-07T18:28:39Z" data-provider="signUpData" finished-at="2015-11-07T18:28:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc@asf]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[12345678]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Invalid email address]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="2657" started-at="2015-11-07T18:28:42Z" data-provider="signUpData" finished-at="2015-11-07T18:28:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc@asf@]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Invalid email address]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[You'll need a password.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="2696" started-at="2015-11-07T18:28:44Z" data-provider="signUpData" finished-at="2015-11-07T18:28:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc@asf..com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[12345678]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Invalid email address]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="testInvalidSignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="testInvalidSignUp" duration-ms="2818" started-at="2015-11-07T18:28:47Z" data-provider="signUpData" finished-at="2015-11-07T18:28:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[John]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Doe]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[jack.chirkov+11@declara.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[12345678]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Uh oh! This email belongs to an existing Declara account. Please log in or reset your password.]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidSignUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="tearDown" is-config="true" duration-ms="582" started-at="2015-11-07T18:28:50Z" finished-at="2015-11-07T18:28:50Z">
+        </test-method> <!-- successfullSignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.chirkov.tests.SignUpTest@128c502c]" name="tearDown" is-config="true" duration-ms="656" started-at="2015-11-08T22:39:26Z" finished-at="2015-11-08T22:39:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.chirkov.tests.SignUpTest@544fe44c]" name="tearDownSuite" is-config="true" duration-ms="1" started-at="2015-11-07T18:28:51Z" finished-at="2015-11-07T18:28:51Z">
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.chirkov.tests.SignUpTest@128c502c]" name="tearDownSuite" is-config="true" duration-ms="1" started-at="2015-11-08T22:39:27Z" finished-at="2015-11-08T22:39:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->

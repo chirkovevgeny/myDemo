@@ -5,5 +5,6 @@
 /Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/pages/BasePage.java
 /Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/drivers/BaseDriver.java
 /Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/pages/TopNavPage.java
+/Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/specs/User.java
 /Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/utils/DataSupplier.java
 /Users/chirkovevgeny/UI_Test/demo/src/main/java/com/chirkov/pages/SignUpPage.java

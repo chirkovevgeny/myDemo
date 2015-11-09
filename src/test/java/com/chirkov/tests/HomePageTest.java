@@ -13,7 +13,6 @@ public class HomePageTest extends BaseTest{
 	
 	@BeforeClass
 	public void setUp(){
-		System.out.println("Executing BeforeClass for HomePageTest");
 		homePage = new HomePage(driverFactory);
 	}
 		

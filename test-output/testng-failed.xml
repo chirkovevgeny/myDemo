@@ -5,9 +5,8 @@
     <classes>
       <class name="com.chirkov.tests.SignUpTest">
         <methods>
-          <include name="invalidSignUpWithEmail" invocation-numbers="0 1 2 3 4 5 6 7"/>
-          <include name="navigateToEmailSignUpPage"/>
           <include name="tearDown"/>
+          <include name="successfullSignUp"/>
           <include name="setUp"/>
           <include name="setupTestSuite"/>
           <include name="setUpDriver"/>

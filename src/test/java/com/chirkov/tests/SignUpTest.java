@@ -1,34 +1,30 @@
 package com.chirkov.tests;
 
-import org.openqa.selenium.By;
+import java.util.concurrent.ThreadLocalRandom;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.chirkov.pages.LoginPage;
 import com.chirkov.pages.SignUpPage;
 import com.chirkov.pages.TopNavPage;
-import com.chirkov.utils.DataSupplier;
+import com.chirkov.specs.User;
 import com.chirkov.utils.TestData;
-import com.gargoylesoftware.htmlunit.ElementNotFoundException;
-import com.google.common.base.Verify;
 
 public class SignUpTest extends BaseTest{
 	
 	public SignUpPage signUpPage;
-	private String primaryUserEmail;
+	public TopNavPage topNav;
+	private User newUser = User.createRandom();
 	
 	@BeforeClass
 	public void setUp(){
-		System.out.println("Executing BeforeClass for SignUpTest");
 		signUpPage = new SignUpPage(driverFactory);
-//		topNav= new TopNavPage(driverFactory);
-		primaryUserEmail = DataSupplier.props.getProperty("primaryUserEmail");
+		topNav= new TopNavPage(driverFactory);
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void navigateToEmailSignUpPage(){
 		signUpPage.goTo();
 		signUpPage.getJoinEmailBtn.click();
@@ -37,10 +33,10 @@ public class SignUpTest extends BaseTest{
 		
 	}
 	
-	@Test(dataProviderClass = TestData.class, dataProvider = "signUpData")
+	@Test(dataProviderClass = TestData.class, dataProvider = "signUpData", priority=2)
 	public void testInvalidSignUp(String firstName,String lastName,String email, String password, 
 								String fNameError, String lNameError, String emailError, String passwordError){
-		signUpPage.SignUpWithEmail(firstName, lastName, email, password);
+		signUpPage.fillOuSignUpEmailForm(firstName, lastName, email, password);
 		if (!fNameError.isEmpty()){
 			Assert.assertTrue(signUpPage.getFirstNameError.getText().equals(fNameError), "First name error validation failed");
 		}
@@ -79,6 +75,17 @@ public class SignUpTest extends BaseTest{
 		}
 	}
 	
-//	@Test
+	@Test(priority=3)
+	public void successfullSignUp(){
+		signUpPage.goTo();
+		signUpPage.getJoinEmailBtn.click();
+		int numOfInterests = ThreadLocalRandom.current().nextInt(3,15);
+		logger.info(newUser.toString());
+		signUpPage.fillOutSignUpEmailForm(newUser);
+		logger.info("Number of selected interests is "+ Integer.toString(numOfInterests));
+		signUpPage.pickRandomInterests(numOfInterests);
+		wait.until(ExpectedConditions.visibilityOf(topNav.profileImage));
+		Assert.assertTrue(topNav.profileImage.isDisplayed(), "Profile image is not Displayed");
+	}
 
 }

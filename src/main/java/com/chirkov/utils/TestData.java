@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.List;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import com.opencsv.CSVReader;
 
@@ -25,6 +24,7 @@ public class TestData {
 		data[i] = allRows.get(i);	
 		};
 		data[allRows.size()-1][2]=DataSupplier.props.getProperty("primaryUserEmail");
+		reader.close();
 		return data;
 	}
 }

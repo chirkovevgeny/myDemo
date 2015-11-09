@@ -7,3 +7,4 @@ com/chirkov/pages/BasePage.class
 com/chirkov/pages/LoginPage.class
 com/chirkov/pages/SignUpPage.class
 com/chirkov/drivers/DriverFactory.class
+com/chirkov/specs/User.class
