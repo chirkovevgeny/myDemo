@@ -59,7 +59,6 @@ public class User {
 	public static String uniqeEmail(){
 		String[] splited = faker.internet().emailAddress().split("@");
 		return splited[0]+Long.toString(System.currentTimeMillis()).substring(4)+"@"+splited[1];
-//		return faker.internet().emailAddress()+Long.toString(System.currentTimeMillis()).substring(4);
 	}
 	
 	public static String uniquePasssword(int length){

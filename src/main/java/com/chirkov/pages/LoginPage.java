@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.chirkov.drivers.DriverFactory;
+import com.chirkov.interfaces.ILoginProvider;
 import com.chirkov.utils.DataSupplier;
 
 public class LoginPage extends BasePage {
@@ -28,33 +29,16 @@ public class LoginPage extends BasePage {
 	public WebElement getCloseModalBtn;
 	
 	public final String PAGE_TITLE = "Login to Declara";
-	private String email = null;
-	private String password = null;
 	
 	public void goTo(){
 		driver.get(DataSupplier.getURL()+"/login");
 	}
-	
-	public LoginPage login(){
-		return this;
-	}
-	
-	public LoginPage withEmail(String email){
-		this.email = email;
-		return this;
+
+	public void login(String email, String password, ILoginProvider loginProvider){
+		this.goTo();
+		loginProvider.login(email, password);
 	}
 
-	public LoginPage withPassword(String password){
-		this.password = password;
-		return this;
-	}
-	
-	public void submit() {
-		type(getEmailInputField, email);
-		type(getPasswordInputField, password);
-		getLoginBtn.click();
-	}
-	
 	public void closeErrorModal() {
 		waitAndClick(getCloseModalBtn);
 	}

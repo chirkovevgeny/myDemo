@@ -4,6 +4,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,11 +14,13 @@ public abstract class BaseDriver {
 	public FluentWait<WebDriver> wait;
 	protected DriverFactory driverFactory;
 	protected WebDriver driver;
+	public Actions actions;
 	
 	public BaseDriver(DriverFactory driverFactory) {
 		this.driverFactory = driverFactory;
 		driver = driverFactory.getDriver();
 		wait = driverFactory.getWait();
+		actions = new Actions(driver);
 	}
 
 	
@@ -39,7 +42,7 @@ public abstract class BaseDriver {
 			}
 		}
 		
-		protected void waitAndClick(WebElement element) {
+		public void waitAndClick(WebElement element) {
 			try {
 				wait.until(ExpectedConditions.elementToBeClickable(element));
 			} catch (Exception e) {
@@ -50,7 +53,6 @@ public abstract class BaseDriver {
 		protected void type(WebElement element, String text) {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			element.clear();
-//			waitAndClick(element);
 			element.sendKeys(text);
 		}
 		
