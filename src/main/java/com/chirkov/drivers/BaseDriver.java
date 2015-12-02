@@ -22,7 +22,6 @@ public abstract class BaseDriver {
 		wait = driverFactory.getWait();
 		actions = new Actions(driver);
 	}
-
 	
 		public WebDriver getDriver() {
 			return driver;
@@ -63,5 +62,4 @@ public abstract class BaseDriver {
 				return true;				
 			}
 		}
-
 }

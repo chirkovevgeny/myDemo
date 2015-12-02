@@ -14,69 +14,67 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.chirkov.utils.DataSupplier;
 
 public class DriverFactory {
-	
+
 	private static String CHROME_MAC_DRIVER = DataSupplier.props.getProperty("CHROME_MAC_DRIVER");
 	private static String CHROME_WINDOWS_DRIVER = DataSupplier.props.getProperty("CHROME_WINDOWS_DRIVER");
 	public static final int TIMEOUT = Integer.parseInt(DataSupplier.props.getProperty("TIMEOUT"));
 	public static final int IMPL_TIMEOUT = Integer.parseInt(DataSupplier.props.getProperty("IMPL_TIMEOUT"));
-	
-	
+
 	private WebDriver driver;
 	private FluentWait<WebDriver> wait;
-//	protected DesiredCapabilities capabilities;
-	
-	public DriverFactory () {
-		//this.capabilities = capabilities;
+
+	public DriverFactory() {
 	}
-	
-	public void setUpDriver (String browser) {
-		if (browser.equalsIgnoreCase("chrome")){
+
+	public void setUpDriver(String browser) {
+		if (browser.equalsIgnoreCase("chrome")) {
 			setupChromeDriver();
 		}
-		if (browser.equalsIgnoreCase("firefox")){
+		if (browser.equalsIgnoreCase("firefox")) {
 			setupFirefoxDriver();
 		}
 		this.wait = createWait(TIMEOUT);
 		setImpliciteWait(IMPL_TIMEOUT);
 	}
-	
+
 	public WebDriver getDriver() {
 		return driver;
 	}
-	
+
 	public FluentWait<WebDriver> getWait() {
 		return wait;
 	}
-	
-	public void setWait(){}
-	
+
+	public void setWait() {
+	}
+
 	protected FluentWait<WebDriver> createWait(int timeout) {
-		return new WebDriverWait(driver, timeout).ignoring(
-				NoSuchElementException.class,
+		return new WebDriverWait(driver, timeout).ignoring(NoSuchElementException.class,
 				StaleElementReferenceException.class);
 	}
-	
+
 	private void setImpliciteWait(int timeout) {
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.MILLISECONDS);
 	}
-	
+
 	private void setupChromeDriver() {
-	   if (System.getProperty("os.name").contains("Mac")) {
-	      File cDriver = new File(DriverFactory.class.getResource(CHROME_MAC_DRIVER).getFile());
-	       
-	      if (!cDriver.canExecute()) {
-	         cDriver.setExecutable(true);
-	      }
-	      System.setProperty("webdriver.chrome.driver", DriverFactory.class.getResource(CHROME_MAC_DRIVER).getFile());
-	       
-	   } else {
-	      System.setProperty("webdriver.chrome.driver", DriverFactory.class.getResource(CHROME_WINDOWS_DRIVER).getFile()); 
-	   }
-	   driver = new ChromeDriver();
+		if (System.getProperty("os.name").contains("Mac")) {
+			File cDriver = new File(DriverFactory.class.getResource(CHROME_MAC_DRIVER).getFile());
+
+			if (!cDriver.canExecute()) {
+				cDriver.setExecutable(true);
+			}
+			System.setProperty("webdriver.chrome.driver", DriverFactory.class.getResource(CHROME_MAC_DRIVER).getFile());
+
+		} else {
+			System.setProperty("webdriver.chrome.driver",
+					DriverFactory.class.getResource(CHROME_WINDOWS_DRIVER).getFile());
+		}
+		driver = new ChromeDriver();
 	}
-	
+
 	private void setupFirefoxDriver() {
 		driver = new FirefoxDriver();
 	}
-	
+
 }
